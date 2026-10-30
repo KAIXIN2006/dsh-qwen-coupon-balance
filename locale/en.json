@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Qianwen Coupon Balance",
+    "description": "Shows the Alibaba Cloud cash-coupon balance behind your Qianwen (Bailian/DashScope) usage in the sidebar foot, and stores the read-only AccessKey in this machine's credential store."
+  }
+}

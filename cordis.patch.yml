@@ -1,0 +1,10 @@
+# dsh-qwen-coupon-balance 的 bundle 补丁层。
+#
+# name 必须是【裸包名】dsh-qwen-coupon-balance —— dsh-web 的客户端模块扫描只解析
+# 裸包名行，靠它找到 package.json 里的 dsh.client 字段，才会把 lib/client.js 服务给网页。
+- insert:
+    - id: qwen-coupon-balance
+      name: dsh-qwen-coupon-balance
+      config:
+        # 服务端缓存 + 页面轮询的间隔（秒），取值 30–3600。
+        refreshSeconds: 300

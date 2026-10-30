@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "千问优惠券余额",
+    "description": "在侧边栏底部显示千问（百炼 / DashScope）扣费所用的阿里云账号代金券余额，只读 AccessKey 保存在本机凭证库。"
+  }
+}

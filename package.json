@@ -1,0 +1,65 @@
+{
+  "name": "dsh-qwen-coupon-balance",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "在 DSH 侧边栏显示阿里云千问（百炼/DashScope）账号的代金券余额，AccessKey 只存本机。",
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "qwen",
+    "dashscope",
+    "bailian",
+    "aliyun",
+    "alibaba-cloud",
+    "coupon",
+    "voucher",
+    "bss",
+    "billing",
+    "cost",
+    "balance"
+  ],
+  "homepage": "https://github.com/KAIXIN2006/dsh-qwen-coupon-balance#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KAIXIN2006/dsh-qwen-coupon-balance.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KAIXIN2006/dsh-qwen-coupon-balance/issues"
+  },
+  "author": "KAIXIN2006",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "docs",
+    "test",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.1"
+  },
+  "license": "MIT"
+}
